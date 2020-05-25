@@ -1,0 +1,42 @@
+==== LHAPDF6 USING DEFAULT-TYPE LHAGLUE INTERFACE ====
+LHAPDF 6.2.1 loading /cvmfs/cms.cern.ch/slc6_amd64_gcc481/external/lhapdf/6.2.1/share/LHAPDF/NNPDF31_nnlo_as_0118_nf_4/NNPDF31_nnlo_as_0118_nf_4_0000.dat
+NNPDF31_nnlo_as_0118_nf_4 PDF set, member #0, version 1; LHAPDF ID = 320900
+Thanks for using LHAPDF 6.2.1. Please make sure to cite the paper:
+  Eur.Phys.J. C75 (2015) 3, 132  (http://arxiv.org/abs/1412.7420)
+ A PDF is used, so alpha_s(MZ) is going to be modified
+ Old value of alpha_s from param_card:   0.11799999999999999     
+ New value of alpha_s from PDF lhapdf :  0.11800240511781991     
+ using LHAPDF
+ Enter event file name
+ Enter 1 to save all cross sections on tape
+       0 otherwise
+ Including scale uncertainties for dynamical_scale_choice          -1
+   - renormalisation scale variation:   1.0000000000000000        2.0000000000000000       0.50000000000000000     
+   - factorisation scale variation:   1.0000000000000000        2.0000000000000000       0.50000000000000000     
+   
+ The events appear to be unweighted
+  Will store the ratios of recomputed weights
+  over reference weights
+ ================================
+ process combination map (specified per FKS dir):
+  1 map         1   2   3   4   5   6
+  1 inv. map    1   2   3   4   5   6
+  2 map         1   2   3   4   5   6
+  2 inv. map    1   2   3   4   5   6
+  3 map         1   2   3   4   5   6
+  3 inv. map    1   2   3   4   5   6
+  4 map         1   2   3   4   5   6
+  4 inv. map    1   2   3   4   5   6
+  5 map         1   2   3   4   5   6
+  5 inv. map    1   2   3   4   5   6
+  6 map         1   2   3   4   5   6
+  6 inv. map    1   2   3   4   5   6
+  7 map         1   1   2   2   3   3   4   4   5   5   6   6
+  7 inv. map    2   4   6   8  10  12
+  8 map         1   1   2   2   3   3   4   4   5   5   6   6
+  8 inv. map    2   4   6   8  10  12
+  9 map         1   1   2   2   3   3   4   4   5   5   6   6
+  9 inv. map    2   4   6   8  10  12
+ 10 map         1   1   2   2   3   3   4   4   5   5   6   6
+ 10 inv. map    2   4   6   8  10  12
+ ================================

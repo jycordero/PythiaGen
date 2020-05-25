@@ -1,0 +1,554 @@
+Starting job on  Thu Sep 27 12:24:21 CDT 2018
+Running on  Linux cmslpc35.fnal.gov 2.6.32-754.el6.x86_64 #1 SMP Wed Jun 20 09:34:21 CDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+System release  Scientific Linux Fermi release 6.10 (Ramsey)
+name: ZATo2LA01j_5f_NLO_FXFX
+carddir: cards/production/2017/13TeV/ZATo2LA01j_5f_NLO_FXFX/
+queue: condor
+scram_arch: slc6_amd64_gcc481
+cmssw_version: CMSSW_7_1_30
+Reusing existing directory assuming generated code already exists
+WARNING: If you changed the process card you need to clean the folder and run from scratch
+Reusing existing process directory - be careful!
+copying generated process to working directory
+INFO: Using default PDF sets for 2017 production
+starting NLO mode
+[?1034hNo module named madgraph
+INFO: ************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D G R A P H 5           *
+*                       a M C @ N L O                      *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 5.2.6.1               20xx-xx-xx         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*                 http://amcatnlo.cern.ch                  *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************ 
+INFO: load configuration from /uscms_data/d3/mlu/genproductions/bin/MadGraph5_aMCatNLO/ZATo2LA01j_5f_NLO_FXFX/ZATo2LA01j_5f_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+INFO: load configuration from /uscms_data/d3/mlu/genproductions/bin/MadGraph5_aMCatNLO/ZATo2LA01j_5f_NLO_FXFX/ZATo2LA01j_5f_NLO_FXFX_gridpack/work/MG5_aMC_v2_6_1/input/mg5_configuration.txt  
+INFO: load configuration from /uscms_data/d3/mlu/genproductions/bin/MadGraph5_aMCatNLO/ZATo2LA01j_5f_NLO_FXFX/ZATo2LA01j_5f_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+launch -n pilotrun
+[1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m
+The following switches determine which programs are run:
+/=============================================================================\
+1. Type of perturbative computation         [1m      order[0m = [32mNLO[0m         
+2. No MC@[N]LO matching / event generation  [1mfixed_order[0m = [32mOFF[0m         
+3. Shower the generated events              [1m     shower[0m = [31mPYTHIA8[0m     
+4. Decay onshell particles                  [1m    madspin[0m = [31mOFF[0m         
+5. Add weights to events for new hypp.      [1m   reweight[0m = [31mOFF[0m         
+6. Run MadAnalysis5 on the events generated [1mmadanalysis[0m = [01mNot Avail.[0m  
+\=============================================================================/
+Either type the switch number (1 to 6) to change its setting,
+Set any switch explicitly (e.g. type 'fixed_order=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.[60s to answer] 
+>The following switches determine which programs are run:
+/=============================================================================\
+1. Type of perturbative computation         [1m      order[0m = [32mNLO[0m         
+2. No MC@[N]LO matching / event generation  [1mfixed_order[0m = [32mOFF[0m         
+3. Shower the generated events              [1m     shower[0m = [32mOFF[0m         
+4. Decay onshell particles                  [1m    madspin[0m = [31mOFF[0m         
+5. Add weights to events for new hypp.      [1m   reweight[0m = [31mOFF[0m         
+6. Run MadAnalysis5 on the events generated [1mmadanalysis[0m = [01mNot Avail.[0m  
+\=============================================================================/
+Either type the switch number (1 to 6) to change its setting,
+Set any switch explicitly (e.g. type 'fixed_order=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+>INFO: will run in mode: noshower 
+[1;34mWARNING: You have chosen not to run a parton shower.
+    NLO events without showering are NOT physical.
+    Please, shower the LesHouches events before using them for physics analyses.
+    You have to choose NOW which parton-shower you WILL use and specify it in the run_card. [0m
+[1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path][90s to answer] 
+>INFO: Update the dependent parameter of the param_card.dat 
+[1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m
+[1;34mWARNING: You are running with FxFx merging enabled.  To be able to merge
+    samples of various multiplicities without double counting, you
+    have to remove some events after showering 'by hand'.  Please
+    read http://amcatnlo.cern.ch/FxFx_merging.htm for more details. [0m
+INFO: Starting run 
+INFO: Compiling the code 
+run_card missed argument muf_ref_fixed. Takes default: 91.188
+run_card missed argument dynamical_scale_choice. Takes default: [-1]
+run_card missed argument muf_over_ref. Takes default: 1.0
+run_card missed argument rw_rscale. Takes default: [1.0, 2.0, 0.5]
+run_card missed argument rw_fscale. Takes default: [1.0, 2.0, 0.5]
+run_card missed argument reweight_pdf. Takes default: [False]
+run_card missed argument store_rwgt_info. Takes default: False
+run_card missed argument mll_sf. Takes default: 30.0
+INFO: Using LHAPDF v6.2.1 interface for PDFs 
+INFO: Compiling source... 
+INFO:           ...done, continuing with P* directories 
+INFO: Compiling StdHEP (can take a couple of minutes) ... 
+INFO:           ...done. 
+INFO: Compiling CutTools (can take a couple of minutes) ... 
+INFO:           ...done. 
+INFO: Compiling IREGI (can take a couple of minutes) ... 
+INFO:           ...done. 
+INFO: Compiling directories... 
+INFO: Compiling on 24 cores 
+INFO:  Compiling P0_uux_emepa... 
+INFO:  Compiling P0_uux_tamtapa... 
+INFO:  Compiling P0_ddx_emepa... 
+INFO:  Compiling P0_ddx_tamtapa... 
+INFO:  Compiling P0_uxu_emepa... 
+INFO:  Compiling P0_uxu_tamtapa... 
+INFO:  Compiling P0_dxd_emepa... 
+INFO:  Compiling P0_dxd_tamtapa... 
+INFO:  Compiling P1_gu_emepau... 
+INFO:  Compiling P1_gu_tamtapau... 
+INFO:  Compiling P1_gd_emepad... 
+INFO:  Compiling P1_gd_tamtapad... 
+INFO:  Compiling P1_gux_emepaux... 
+INFO:  Compiling P1_gux_tamtapaux... 
+INFO:  Compiling P1_gdx_emepadx... 
+INFO:  Compiling P1_gdx_tamtapadx... 
+INFO:  Compiling P1_ug_emepau... 
+INFO:  Compiling P1_ug_tamtapau... 
+INFO:  Compiling P1_uux_emepag... 
+INFO:  Compiling P1_uux_tamtapag... 
+INFO:  Compiling P1_dg_emepad... 
+INFO:  Compiling P1_dg_tamtapad... 
+INFO:  Compiling P1_ddx_emepag... 
+INFO:  Compiling P1_ddx_tamtapag... 
+INFO:     P0_uux_emepa done. 
+INFO:  Compiling P1_uxg_emepaux... 
+INFO:     P0_ddx_tamtapa done. 
+INFO:  Compiling P1_uxg_tamtapaux... 
+INFO:     P0_uux_tamtapa done. 
+INFO:  Compiling P1_uxu_emepag... 
+INFO:     P0_dxd_emepa done. 
+INFO:  Compiling P1_uxu_tamtapag... 
+INFO:     P0_uxu_emepa done. 
+INFO:  Compiling P1_dxg_emepadx... 
+INFO:     P0_ddx_emepa done. 
+INFO:  Compiling P1_dxg_tamtapadx... 
+INFO:     P0_uxu_tamtapa done. 
+INFO:  Compiling P1_dxd_emepag... 
+INFO:     P0_dxd_tamtapa done. 
+INFO:  Compiling P1_dxd_tamtapag... 
+INFO:     P1_ddx_emepag done. 
+INFO:     P1_ug_emepau done. 
+INFO:     P1_ddx_tamtapag done. 
+INFO:     P1_uux_emepag done. 
+INFO:     P1_gux_emepaux done. 
+INFO:     P1_gdx_emepadx done. 
+INFO:     P1_uux_tamtapag done. 
+INFO:     P1_gd_emepad done. 
+INFO:     P1_gux_tamtapaux done. 
+INFO:     P1_gu_emepau done. 
+INFO:     P1_gd_tamtapad done. 
+INFO:     P1_gu_tamtapau done. 
+INFO:     P1_dg_tamtapad done. 
+INFO:     P1_gdx_tamtapadx done. 
+INFO:     P1_ug_tamtapau done. 
+INFO:     P1_dg_emepad done. 
+INFO:     P1_uxu_emepag done. 
+INFO:     P1_dxg_emepadx done. 
+INFO:     P1_dxd_emepag done. 
+INFO:     P1_dxd_tamtapag done. 
+INFO:     P1_uxu_tamtapag done. 
+INFO:     P1_dxg_tamtapadx done. 
+INFO:     P1_uxg_tamtapaux done. 
+INFO:     P1_uxg_emepaux done. 
+INFO: Checking test output: 
+INFO: P0_uux_emepa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_uux_tamtapa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_ddx_emepa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_ddx_tamtapa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_uxu_emepa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_uxu_tamtapa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dxd_emepa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dxd_tamtapa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gu_emepau 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gu_tamtapau 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gd_emepad 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gd_tamtapad 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gux_emepaux 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gux_tamtapaux 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gdx_emepadx 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gdx_tamtapadx 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_ug_emepau 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_ug_tamtapau 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uux_emepag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uux_tamtapag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dg_emepad 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dg_tamtapad 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_ddx_emepag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_ddx_tamtapag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uxg_emepaux 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uxg_tamtapaux 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uxu_emepag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uxu_tamtapag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dxg_emepadx 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dxg_tamtapadx 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dxd_emepag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dxd_tamtapag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: Starting run 
+INFO: Cleaning previous results 
+INFO: Generating events without running the shower. 
+INFO: Setting up grids 
+Start waiting for update. (more info in debug mode)
+INFO:  Idle: 0,  Running: 480,  Completed: 64 [  1m 57s  ] 
+INFO: Updated ClusterId 453522 MaxWallTimeMins to: 500 
+INFO:  Idle: 0,  Running: 160,  Completed: 384 [  11m 56s  ] 
+INFO: Updated ClusterId 453689 MaxWallTimeMins to: 500 
+INFO:  Idle: 0,  Running: 118,  Completed: 426 [  14m 0s  ] 
+INFO:  Idle: 0,  Running: 93,  Completed: 451 [  16m 3s  ] 
+INFO:  Idle: 0,  Running: 59,  Completed: 485 [  18m 37s  ] 
+INFO:  Idle: 0,  Running: 47,  Completed: 497 [  20m 39s  ] 
+INFO:  Idle: 0,  Running: 39,  Completed: 505 [  22m 40s  ] 
+INFO:  Idle: 0,  Running: 35,  Completed: 509 [  24m 42s  ] 
+INFO:  Idle: 0,  Running: 26,  Completed: 518 [  26m 43s  ] 
+INFO:  Idle: 0,  Running: 24,  Completed: 520 [  28m 44s  ] 
+INFO:  Idle: 0,  Running: 21,  Completed: 523 [  30m 44s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 525 [  32m 45s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 526 [  34m 46s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 529 [  36m 46s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 533 [  38m 47s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 533 [  40m 47s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 533 [  42m 48s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 534 [  44m 48s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 535 [  46m 49s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 536 [  48m 49s  ] 
+INFO: Start to wait 300s between checking status.
+Note that you can change this time in the configuration file.
+Press ctrl-C to force the update. 
+INFO:  Idle: 0,  Running: 7,  Completed: 537 [  53m 49s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 538 [  58m 50s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 539 [  1h 3m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 539 [  1h 8m  ] 
+INFO: Updated ClusterId 453560 MaxWallTimeMins to: 500 
+INFO:  Idle: 0,  Running: 5,  Completed: 539 [  1h 13m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 541 [  1h 18m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 543 [  1h 23m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 543 [  1h 28m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 543 [  1h 33m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 543 [  1h 38m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 543 [  1h 43m  ] 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 544 [  1h 48m  ] 
+INFO: Determining the number of unweighted events per channel
+
+      Intermediate results:
+      Random seed: 33
+      Total cross section:      8.554e+01 +- 4.1e-01 pb
+      Total abs(cross section): 1.680e+02 +- 4.5e-01 pb 
+
+ 
+INFO: Computing upper envelope 
+INFO: Updated ClusterId 454005 MaxWallTimeMins to: 500 
+INFO: Updated ClusterId 454007 MaxWallTimeMins to: 500 
+INFO:  Idle: 148,  Running: 396,  Completed: 0 [  21.5s  ] 
+INFO:  Idle: 101,  Running: 398,  Completed: 45 [  2m 40s  ] 
+INFO: Updated ClusterId 454429 MaxWallTimeMins to: 500 
+INFO: Updated ClusterId 454169 MaxWallTimeMins to: 500 
+INFO:  Idle: 0,  Running: 73,  Completed: 471 [  12m 35s  ] 
+INFO:  Idle: 0,  Running: 61,  Completed: 483 [  14m 37s  ] 
+INFO:  Idle: 0,  Running: 49,  Completed: 495 [  16m 39s  ] 
+INFO:  Idle: 0,  Running: 43,  Completed: 501 [  18m 41s  ] 
+INFO:  Idle: 0,  Running: 42,  Completed: 502 [  20m 42s  ] 
+INFO:  Idle: 0,  Running: 35,  Completed: 509 [  22m 44s  ] 
+INFO:  Idle: 0,  Running: 33,  Completed: 511 [  24m 45s  ] 
+INFO:  Idle: 0,  Running: 30,  Completed: 514 [  26m 46s  ] 
+INFO:  Idle: 0,  Running: 25,  Completed: 519 [  28m 47s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 524 [  30m 48s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 527 [  32m 48s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 528 [  34m 50s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 531 [  36m 50s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 531 [  38m 51s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 531 [  40m 51s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 532 [  42m 52s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 532 [  44m 53s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 535 [  46m 53s  ] 
+INFO: Start to wait 300s between checking status.
+Note that you can change this time in the configuration file.
+Press ctrl-C to force the update. 
+INFO:  Idle: 0,  Running: 6,  Completed: 538 [  51m 54s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 538 [  56m 54s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 539 [  1h 1m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 539 [  1h 6m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 539 [  1h 11m  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 540 [  1h 16m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 541 [  1h 21m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 542 [  1h 26m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 543 [  1h 31m  ] 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 544 [  1h 36m  ] 
+INFO: Updating the number of unweighted events per channel
+
+      Intermediate results:
+      Random seed: 33
+      Total cross section:      8.687e+01 +- 1.3e-01 pb
+      Total abs(cross section): 1.718e+02 +- 1.4e-01 pb 
+
+ 
+INFO: Generating events 
+INFO: Updated ClusterId 454675 MaxWallTimeMins to: 500 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 260 [  1m 33s  ] 
+INFO: Waiting while files are transferred back from the cluster nodes 
+INFO:    Doing reweight 
+INFO:  Idle: 260,  Running: 0,  Completed: 0 [  8.9s  ] 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 260 [  2m 9s  ] 
+INFO: Collecting events 
+INFO: 
+   --------------------------------------------------------------
+      Summary:
+      Process p p > lep lep a [QCD] @0 ; p p > lep lep j a [QCD] @1
+      Run at p-p collider (6500.0 + 6500.0 GeV)
+      Number of events generated: 1500
+      Total cross section: 8.354e+01 +- 1.3e-01 pb
+   --------------------------------------------------------------
+  Number of loop ME evaluations (by MadLoop): 1367448
+    Stability unknown:                   0
+    Stable PS point:                     1350323
+    Unstable PS point (and rescued):     17119
+    Unstable PS point (and not rescued): 6
+    Only double precision used:          1350323
+    Quadruple precision used:            17125
+    Initialization phase-space points:   0
+    Reduction methods used:
+      > CutTools (double precision)      1350323
+      > CutTools (quadruple precision)   17119
+      > Not identified (CTModeRun != -1) 6
+  Total number of unstable PS point detected: 6 (0.00%)
+    Maximum fraction of UPS points in channel processtmp/SubProcesses/P1_dg_tamtapad/GF7 (0.05%)
+    Please report this to the authors while providing the file
+    /uscms_data/d3/mlu/genproductions/bin/MadGraph5_aMCatNLO/ZATo2LA01j_5f_NLO_FXFX/ZATo2LA01j_5f_NLO_FXFX_gridpack/work/processtmp/SubProcesses/P1_dg_tamtapad/GF7/UPS.log
+ 
+INFO: The /uscms_data/d3/mlu/genproductions/bin/MadGraph5_aMCatNLO/ZATo2LA01j_5f_NLO_FXFX/ZATo2LA01j_5f_NLO_FXFX_gridpack/work/processtmp/Events/pilotrun/events.lhe.gz file has been generated.
+ 
+INFO: Events generated 
+reweight -from_cards
+decay_events -from_cards
+[1;34mWARNING: You have chosen not to run a parton shower. NLO events without showering are NOT physical.
+Please, shower the Les Houches events before using them for physics analyses. [0m
+INFO:  
+[1;34mWARNING: You are running with FxFx merging enabled.
+To be able to merge samples of various multiplicities without double counting,
+you have to remove some events after showering 'by hand'.
+Please read http://amcatnlo.cern.ch/FxFx_merging.htm for more details. [0m
+quit
+INFO:  
+ 
+finished pilot run
+cleaning unneeded files from gridpack

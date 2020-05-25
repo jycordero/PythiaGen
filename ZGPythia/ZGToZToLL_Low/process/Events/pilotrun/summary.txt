@@ -1,0 +1,24 @@
+
+   --------------------------------------------------------------
+      Summary:
+      Process p p > lep lep a [QCD] @0 ; p p > lep lep j a [QCD] @1
+      Run at p-p collider (6500.0 + 6500.0 GeV)
+      Number of events generated: 1500
+      Total cross section: 2.160e+02 +- 3.1e-01 pb
+   --------------------------------------------------------------
+  Number of loop ME evaluations (by MadLoop): 1437198
+    Stability unknown:                   0
+    Stable PS point:                     1416163
+    Unstable PS point (and rescued):     21027
+    Unstable PS point (and not rescued): 8
+    Only double precision used:          1416163
+    Quadruple precision used:            21035
+    Initialization phase-space points:   0
+    Reduction methods used:
+      > CutTools (double precision)      1416163
+      > CutTools (quadruple precision)   21027
+      > Not identified (CTModeRun != -1) 8
+  Total number of unstable PS point detected: 8 (0.00%)
+    Maximum fraction of UPS points in channel processtmp/SubProcesses/P1_uxg_emepaux/GF11 (0.05%)
+    Please report this to the authors while providing the file
+    /local-scratch/melu/genproductions/bin/MadGraph5_aMCatNLO/ZATo2LA01j_5f_NLO_FXFX/ZATo2LA01j_5f_NLO_FXFX_gridpack/work/processtmp/SubProcesses/P1_uxg_emepaux/GF11/UPS.log

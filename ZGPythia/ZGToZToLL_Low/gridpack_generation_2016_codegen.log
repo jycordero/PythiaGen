@@ -1,0 +1,964 @@
+Starting job on  Wed Apr 24 03:39:04 CDT 2019
+Running on  Linux n006 3.10.0-862.14.4.el7.x86_64 #1 SMP Wed Sep 26 15:12:11 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+System release  CentOS release 6.10 (Final)
+name: ZATo2LA01j_5f_NLO_FXFX_2016
+carddir: temp/InputCards_2016/
+queue: condor
+scram_arch: slc6_amd64_gcc481
+cmssw_version: CMSSW_7_1_30
+patching file models/loop_qcd_qed_sm/restrict_lepton_masses_no_lepton_yukawas.dat
+patching file models/loop_sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_ckm_lepton_masses.dat
+patching file models/sm/restrict_ckm_lepton_masses_no_b_mass.dat
+patching file models/sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_lepton_masses_no_b_mass.dat
+patching file Template/NLO/SubProcesses/MCmasses_PYTHIA8.inc
+patching file Template/LO/bin/internal/Gridpack/run.sh
+patching file madgraph/interface/loop_interface.py
+Hunk #1 succeeded at 500 (offset 2 lines).
+patching file madgraph/various/systematics.py
+Hunk #1 succeeded at 314 (offset 86 lines).
+Hunk #2 succeeded at 348 (offset 87 lines).
+Hunk #3 succeeded at 512 (offset 96 lines).
+patching file Template/LO/Source/.make_opts
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/export_v4.py
+Hunk #1 succeeded at 502 (offset 4 lines).
+patching file madgraph/iolibs/template_files/pdf_opendata.f
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file Template/LO/Source/.make_opts
+patching file Template/LO/Source/PDF/pdf_lhapdf6.cc
+patching file Template/NLO/Source/PDF/pdf_lhapdf6.cc
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file madgraph/iolibs/export_v4.py
+Hunk #1 succeeded at 1742 (offset 3 lines).
+patching file MadSpin/interface_madspin.py
+patching file MadSpin/interface_madspin.py
+patching file madgraph/interface/reweight_interface.py
+patching file madgraph/interface/common_run_interface.py
+patching file madgraph/interface/madgraph_interface.py
+Hunk #1 succeeded at 5743 (offset -97 lines).
+patching file madgraph/various/systematics.py
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file Template/loop_material/StandAlone/SubProcesses/makefile
+patching file madgraph/interface/reweight_interface.py
+Hunk #1 succeeded at 458 with fuzz 1 (offset -9 lines).
+patching file madgraph/various/misc.py
+local path is not an afs path, batch jobs will use worker node scratch space instead of afs
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.0                 2017-08-16         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/mgconfigscript
+The import format was not given, so we guess it as command
+set auto_update 0
+save options auto_update
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set output_dependencies internal
+save options output_dependencies
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set lhapdf /cvmfs/cms.cern.ch/slc6_amd64_gcc481/external/lhapdf/6.2.1/share/LHAPDF/../../bin/lhapdf-config
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc481/external/lhapdf/6.2.1/share/LHAPDF/../../bin/lhapdf-config
+save options lhapdf
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set run_mode  1
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set cluster_type cms_condor
+save options cluster_type
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_queue None
+save options cluster_queue
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_status_update 300 120
+save options cluster_status_update
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_nb_retry 10
+save options cluster_nb_retry
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_retry_wait 300
+save options cluster_retry_wait
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_retry_wait 30
+save options cluster_retry_wait
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+quit
+ 
+
+ 
+
+/srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.0                 2017-08-16         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from MG5_aMC_v2_6_0/input/mg5_configuration.txt 
+None does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc481/external/lhapdf/6.2.1/share/LHAPDF/../../bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/ZATo2LA01j_5f_NLO_FXFX_2016_proc_card.dat
+The import format was not given, so we guess it as command
+import model loop_sm-no_b_mass
+INFO: load particles 
+INFO: load vertices 
+INFO: Restrict model loop_sm with file MG5_aMC_v2_6_0/models/loop_sm/restrict_no_b_mass.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+[1;34mPass the definition of 'j' and 'p' to 5 flavour scheme.[0m
+Defined multiparticle all = g gh gh~ d u s c b d~ u~ s~ c~ b~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t t~ z w+ h w- ta- ta+
+define p = p b b~
+Defined multiparticle p = g u c d s b u~ c~ d~ s~ b~
+define j = j b b~
+Defined multiparticle j = g u c d s b u~ c~ d~ s~ b~
+define lep = e+ mu+ ta+ e- mu- ta-
+Defined multiparticle lep = e- mu- e+ mu+ ta- ta+
+generate p p > lep lep a [QCD] @0
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > e- e+ a [ all = QCD ] (1 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > mu- mu+ a [ all = QCD ] (2 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > ta- ta+ a [ all = QCD ] (3 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > e- e+ a [ all = QCD ] (4 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > mu- mu+ a [ all = QCD ] (5 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > ta- ta+ a [ all = QCD ] (6 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > e- e+ a [ all = QCD ] (7 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > mu- mu+ a [ all = QCD ] (8 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > ta- ta+ a [ all = QCD ] (9 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > e- e+ a [ all = QCD ] (10 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > mu- mu+ a [ all = QCD ] (11 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > ta- ta+ a [ all = QCD ] (12 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: b b~ > e- e+ a [ all = QCD ] (13 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: b b~ > mu- mu+ a [ all = QCD ] (14 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: b b~ > ta- ta+ a [ all = QCD ] (15 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > e- e+ a [ all = QCD ] (16 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > mu- mu+ a [ all = QCD ] (17 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > ta- ta+ a [ all = QCD ] (18 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > e- e+ a [ all = QCD ] (19 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > mu- mu+ a [ all = QCD ] (20 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > ta- ta+ a [ all = QCD ] (21 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > e- e+ a [ all = QCD ] (22 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > mu- mu+ a [ all = QCD ] (23 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > ta- ta+ a [ all = QCD ] (24 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > e- e+ a [ all = QCD ] (25 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > mu- mu+ a [ all = QCD ] (26 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > ta- ta+ a [ all = QCD ] (27 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ b > e- e+ a [ all = QCD ] (28 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ b > mu- mu+ a [ all = QCD ] (29 / 30) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ b > ta- ta+ a [ all = QCD ] (30 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > e- e+ a QED<=3 [ all = QCD ] (1 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > mu- mu+ a QED<=3 [ all = QCD ] (2 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > ta- ta+ a QED<=3 [ all = QCD ] (3 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > e- e+ a QED<=3 [ all = QCD ] (4 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > mu- mu+ a QED<=3 [ all = QCD ] (5 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > ta- ta+ a QED<=3 [ all = QCD ] (6 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > e- e+ a QED<=3 [ all = QCD ] (7 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > mu- mu+ a QED<=3 [ all = QCD ] (8 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > ta- ta+ a QED<=3 [ all = QCD ] (9 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > e- e+ a QED<=3 [ all = QCD ] (10 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > mu- mu+ a QED<=3 [ all = QCD ] (11 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > ta- ta+ a QED<=3 [ all = QCD ] (12 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b b~ > e- e+ a QED<=3 [ all = QCD ] (13 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b b~ > mu- mu+ a QED<=3 [ all = QCD ] (14 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b b~ > ta- ta+ a QED<=3 [ all = QCD ] (15 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > e- e+ a QED<=3 [ all = QCD ] (16 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > mu- mu+ a QED<=3 [ all = QCD ] (17 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > ta- ta+ a QED<=3 [ all = QCD ] (18 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > e- e+ a QED<=3 [ all = QCD ] (19 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > mu- mu+ a QED<=3 [ all = QCD ] (20 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > ta- ta+ a QED<=3 [ all = QCD ] (21 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > e- e+ a QED<=3 [ all = QCD ] (22 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > mu- mu+ a QED<=3 [ all = QCD ] (23 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > ta- ta+ a QED<=3 [ all = QCD ] (24 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > e- e+ a QED<=3 [ all = QCD ] (25 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > mu- mu+ a QED<=3 [ all = QCD ] (26 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > ta- ta+ a QED<=3 [ all = QCD ] (27 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ b > e- e+ a QED<=3 [ all = QCD ] (28 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ b > mu- mu+ a QED<=3 [ all = QCD ] (29 / 30) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ b > ta- ta+ a QED<=3 [ all = QCD ] (30 / 30) 
+INFO: Generated 30 subprocesses with 1800 real emission diagrams, 240 born diagrams and 600 virtual diagrams 
+add process p p > lep lep j a [QCD] @1
+INFO: Generating FKS-subtracted matrix elements for born process: g u > e- e+ u a [ all = QCD ] @1 (1 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u > mu- mu+ u a [ all = QCD ] @1 (2 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u > ta- ta+ u a [ all = QCD ] @1 (3 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > e- e+ c a [ all = QCD ] @1 (4 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > mu- mu+ c a [ all = QCD ] @1 (5 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > ta- ta+ c a [ all = QCD ] @1 (6 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > e- e+ d a [ all = QCD ] @1 (7 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > mu- mu+ d a [ all = QCD ] @1 (8 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > ta- ta+ d a [ all = QCD ] @1 (9 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > e- e+ s a [ all = QCD ] @1 (10 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > mu- mu+ s a [ all = QCD ] @1 (11 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > ta- ta+ s a [ all = QCD ] @1 (12 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g b > e- e+ b a [ all = QCD ] @1 (13 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g b > mu- mu+ b a [ all = QCD ] @1 (14 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g b > ta- ta+ b a [ all = QCD ] @1 (15 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > e- e+ u~ a [ all = QCD ] @1 (16 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > mu- mu+ u~ a [ all = QCD ] @1 (17 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > ta- ta+ u~ a [ all = QCD ] @1 (18 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > e- e+ c~ a [ all = QCD ] @1 (19 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > mu- mu+ c~ a [ all = QCD ] @1 (20 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > ta- ta+ c~ a [ all = QCD ] @1 (21 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > e- e+ d~ a [ all = QCD ] @1 (22 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > mu- mu+ d~ a [ all = QCD ] @1 (23 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > ta- ta+ d~ a [ all = QCD ] @1 (24 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > e- e+ s~ a [ all = QCD ] @1 (25 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > mu- mu+ s~ a [ all = QCD ] @1 (26 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > ta- ta+ s~ a [ all = QCD ] @1 (27 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g b~ > e- e+ b~ a [ all = QCD ] @1 (28 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g b~ > mu- mu+ b~ a [ all = QCD ] @1 (29 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: g b~ > ta- ta+ b~ a [ all = QCD ] @1 (30 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > e- e+ u a [ all = QCD ] @1 (31 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > mu- mu+ u a [ all = QCD ] @1 (32 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > ta- ta+ u a [ all = QCD ] @1 (33 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > e- e+ g a [ all = QCD ] @1 (34 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > mu- mu+ g a [ all = QCD ] @1 (35 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > ta- ta+ g a [ all = QCD ] @1 (36 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > e- e+ c a [ all = QCD ] @1 (37 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > mu- mu+ c a [ all = QCD ] @1 (38 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > ta- ta+ c a [ all = QCD ] @1 (39 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > e- e+ g a [ all = QCD ] @1 (40 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > mu- mu+ g a [ all = QCD ] @1 (41 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > ta- ta+ g a [ all = QCD ] @1 (42 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > e- e+ d a [ all = QCD ] @1 (43 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > mu- mu+ d a [ all = QCD ] @1 (44 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > ta- ta+ d a [ all = QCD ] @1 (45 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > e- e+ g a [ all = QCD ] @1 (46 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > mu- mu+ g a [ all = QCD ] @1 (47 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > ta- ta+ g a [ all = QCD ] @1 (48 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > e- e+ s a [ all = QCD ] @1 (49 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > mu- mu+ s a [ all = QCD ] @1 (50 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > ta- ta+ s a [ all = QCD ] @1 (51 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > e- e+ g a [ all = QCD ] @1 (52 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > mu- mu+ g a [ all = QCD ] @1 (53 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > ta- ta+ g a [ all = QCD ] @1 (54 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b g > e- e+ b a [ all = QCD ] @1 (55 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b g > mu- mu+ b a [ all = QCD ] @1 (56 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b g > ta- ta+ b a [ all = QCD ] @1 (57 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b b~ > e- e+ g a [ all = QCD ] @1 (58 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b b~ > mu- mu+ g a [ all = QCD ] @1 (59 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b b~ > ta- ta+ g a [ all = QCD ] @1 (60 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > e- e+ u~ a [ all = QCD ] @1 (61 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > mu- mu+ u~ a [ all = QCD ] @1 (62 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > ta- ta+ u~ a [ all = QCD ] @1 (63 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > e- e+ g a [ all = QCD ] @1 (64 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > mu- mu+ g a [ all = QCD ] @1 (65 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > ta- ta+ g a [ all = QCD ] @1 (66 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > e- e+ c~ a [ all = QCD ] @1 (67 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > mu- mu+ c~ a [ all = QCD ] @1 (68 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > ta- ta+ c~ a [ all = QCD ] @1 (69 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > e- e+ g a [ all = QCD ] @1 (70 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > mu- mu+ g a [ all = QCD ] @1 (71 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > ta- ta+ g a [ all = QCD ] @1 (72 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > e- e+ d~ a [ all = QCD ] @1 (73 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > mu- mu+ d~ a [ all = QCD ] @1 (74 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > ta- ta+ d~ a [ all = QCD ] @1 (75 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > e- e+ g a [ all = QCD ] @1 (76 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > mu- mu+ g a [ all = QCD ] @1 (77 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > ta- ta+ g a [ all = QCD ] @1 (78 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > e- e+ s~ a [ all = QCD ] @1 (79 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > mu- mu+ s~ a [ all = QCD ] @1 (80 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > ta- ta+ s~ a [ all = QCD ] @1 (81 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > e- e+ g a [ all = QCD ] @1 (82 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > mu- mu+ g a [ all = QCD ] @1 (83 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > ta- ta+ g a [ all = QCD ] @1 (84 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ g > e- e+ b~ a [ all = QCD ] @1 (85 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ g > mu- mu+ b~ a [ all = QCD ] @1 (86 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ g > ta- ta+ b~ a [ all = QCD ] @1 (87 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ b > e- e+ g a [ all = QCD ] @1 (88 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ b > mu- mu+ g a [ all = QCD ] @1 (89 / 90) 
+INFO: Generating FKS-subtracted matrix elements for born process: b~ b > ta- ta+ g a [ all = QCD ] @1 (90 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > e- e+ a u QCD<=1 QED<=3 [ all = QCD ] @1 (1 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > mu- mu+ a u QCD<=1 QED<=3 [ all = QCD ] @1 (2 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > ta- ta+ a u QCD<=1 QED<=3 [ all = QCD ] @1 (3 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > e- e+ a c QCD<=1 QED<=3 [ all = QCD ] @1 (4 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > mu- mu+ a c QCD<=1 QED<=3 [ all = QCD ] @1 (5 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > ta- ta+ a c QCD<=1 QED<=3 [ all = QCD ] @1 (6 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > e- e+ a d QCD<=1 QED<=3 [ all = QCD ] @1 (7 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > mu- mu+ a d QCD<=1 QED<=3 [ all = QCD ] @1 (8 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > ta- ta+ a d QCD<=1 QED<=3 [ all = QCD ] @1 (9 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > e- e+ a s QCD<=1 QED<=3 [ all = QCD ] @1 (10 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > mu- mu+ a s QCD<=1 QED<=3 [ all = QCD ] @1 (11 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > ta- ta+ a s QCD<=1 QED<=3 [ all = QCD ] @1 (12 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g b > e- e+ a b QCD<=1 QED<=3 [ all = QCD ] @1 (13 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g b > mu- mu+ a b QCD<=1 QED<=3 [ all = QCD ] @1 (14 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g b > ta- ta+ a b QCD<=1 QED<=3 [ all = QCD ] @1 (15 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > e- e+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 (16 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > mu- mu+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 (17 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > ta- ta+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 (18 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > e- e+ a c~ QCD<=1 QED<=3 [ all = QCD ] @1 (19 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > mu- mu+ a c~ QCD<=1 QED<=3 [ all = QCD ] @1 (20 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > ta- ta+ a c~ QCD<=1 QED<=3 [ all = QCD ] @1 (21 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > e- e+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 (22 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > mu- mu+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 (23 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > ta- ta+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 (24 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > e- e+ a s~ QCD<=1 QED<=3 [ all = QCD ] @1 (25 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > mu- mu+ a s~ QCD<=1 QED<=3 [ all = QCD ] @1 (26 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > ta- ta+ a s~ QCD<=1 QED<=3 [ all = QCD ] @1 (27 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g b~ > e- e+ a b~ QCD<=1 QED<=3 [ all = QCD ] @1 (28 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g b~ > mu- mu+ a b~ QCD<=1 QED<=3 [ all = QCD ] @1 (29 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g b~ > ta- ta+ a b~ QCD<=1 QED<=3 [ all = QCD ] @1 (30 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > e- e+ a u QCD<=1 QED<=3 [ all = QCD ] @1 (31 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > mu- mu+ a u QCD<=1 QED<=3 [ all = QCD ] @1 (32 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > ta- ta+ a u QCD<=1 QED<=3 [ all = QCD ] @1 (33 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (34 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (35 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (36 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > e- e+ a c QCD<=1 QED<=3 [ all = QCD ] @1 (37 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > mu- mu+ a c QCD<=1 QED<=3 [ all = QCD ] @1 (38 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > ta- ta+ a c QCD<=1 QED<=3 [ all = QCD ] @1 (39 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (40 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (41 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (42 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > e- e+ a d QCD<=1 QED<=3 [ all = QCD ] @1 (43 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > mu- mu+ a d QCD<=1 QED<=3 [ all = QCD ] @1 (44 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > ta- ta+ a d QCD<=1 QED<=3 [ all = QCD ] @1 (45 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (46 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (47 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (48 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > e- e+ a s QCD<=1 QED<=3 [ all = QCD ] @1 (49 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > mu- mu+ a s QCD<=1 QED<=3 [ all = QCD ] @1 (50 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > ta- ta+ a s QCD<=1 QED<=3 [ all = QCD ] @1 (51 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (52 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (53 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (54 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b g > e- e+ a b QCD<=1 QED<=3 [ all = QCD ] @1 (55 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b g > mu- mu+ a b QCD<=1 QED<=3 [ all = QCD ] @1 (56 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b g > ta- ta+ a b QCD<=1 QED<=3 [ all = QCD ] @1 (57 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b b~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (58 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b b~ > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (59 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b b~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (60 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > e- e+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 (61 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > mu- mu+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 (62 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > ta- ta+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 (63 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (64 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (65 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (66 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > e- e+ a c~ QCD<=1 QED<=3 [ all = QCD ] @1 (67 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > mu- mu+ a c~ QCD<=1 QED<=3 [ all = QCD ] @1 (68 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > ta- ta+ a c~ QCD<=1 QED<=3 [ all = QCD ] @1 (69 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (70 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (71 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (72 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > e- e+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 (73 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > mu- mu+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 (74 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > ta- ta+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 (75 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (76 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (77 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (78 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > e- e+ a s~ QCD<=1 QED<=3 [ all = QCD ] @1 (79 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > mu- mu+ a s~ QCD<=1 QED<=3 [ all = QCD ] @1 (80 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > ta- ta+ a s~ QCD<=1 QED<=3 [ all = QCD ] @1 (81 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (82 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (83 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (84 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ g > e- e+ a b~ QCD<=1 QED<=3 [ all = QCD ] @1 (85 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ g > mu- mu+ a b~ QCD<=1 QED<=3 [ all = QCD ] @1 (86 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ g > ta- ta+ a b~ QCD<=1 QED<=3 [ all = QCD ] @1 (87 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ b > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (88 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ b > mu- mu+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (89 / 90) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: b~ b > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 (90 / 90) 
+INFO: Generated 90 subprocesses with 43260 real emission diagrams, 1800 born diagrams and 20580 virtual diagrams 
+output ZATo2LA01j_5f_NLO_FXFX_2016 -nojpeg
+[1;60mFirst output using loop matrix-elements has been detected. Now asking for loop reduction:[0m
+For loop computations, MadLoop requires dedicated tools to perform the reduction of loop Feynman diagrams using OPP-based and/or TIR approaches.
+
+Which one do you want to install? (this needs to be done only once)
+1. [34mcuttools  (OPP) [0711.3596]  [0m : will be installed (required)
+2. [34miregi     (TIR) [1405.0301]  [0m : will be installed (required)
+3. [34mninja     (OPP) [1403.1229]  [0m : [92mwill be installed [0m(recommended)
+4. [34mcollier   (TIR) [1604.06792] [0m : [91mdo not install[0m
+5. [34mgolem     (TIR) [0807.0605]  [0m : [91mdo not install[0m
+You can:
+ -> hit 'enter' to proceed
+ -> type a number to cycle its options
+ -> enter the following command:
+    [34m{tool_name}[0m [[34minstall[0m|[34mnoinstall[0m|[34m{prefixed_installation_path}[0m]
+
+[1m[91mIf you are unsure about what this question means, just type enter to proceed. [0m
+[1;34mfound line : display multiparticles[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+set golem ''
+save options golem
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options golem
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set pjfry ''
+save options pjfry
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options pjfry
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set collier ''
+save options collier
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options collier
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+install ninja
+[1;60m   You are installing 'ninja', please cite ref(s): [92marXiv:1203.0291, arXiv:1403.1229, arXiv:1604.01363[0m. [0m
+Downloading the HEPToolInstaller at:
+   http://madgraph.phys.ucl.ac.be/Downloads/HEPToolsInstaller/HEPToolsInstaller_V118.tar.gz
+Now installing ninja. Be patient...
+[1;32mninja successfully installed in /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/HEPTools.[0m
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+INFO: Writing out the aMC@NLO code, using optimized Loops 
+INFO: initialize a new directory: ZATo2LA01j_5f_NLO_FXFX_2016 
+INFO: remove old information in ZATo2LA01j_5f_NLO_FXFX_2016 
+INFO: When using the 'output_dependencies=internal'  MG5_aMC option, the (optional) reduction library ninja cannot be employed because it is not distributed with the MG5_aMC code so that it cannot be copied locally. 
+INFO: Generating real emission matrix-elements... 
+INFO: Generating Helas calls for FKS process: u u~ > e- e+ a [ all = QCD ] (1 / 120) 
+INFO: Processing color information for process: u u~ > e- e+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: u u~ > mu- mu+ a [ all = QCD ] (2 / 120) 
+INFO: Generating Helas calls for FKS process: u u~ > ta- ta+ a [ all = QCD ] (3 / 120) 
+INFO: Reusing existing color information for process: u u~ > ta- ta+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: c c~ > e- e+ a [ all = QCD ] (4 / 120) 
+INFO: Generating Helas calls for FKS process: c c~ > mu- mu+ a [ all = QCD ] (5 / 120) 
+INFO: Generating Helas calls for FKS process: c c~ > ta- ta+ a [ all = QCD ] (6 / 120) 
+INFO: Generating Helas calls for FKS process: d d~ > e- e+ a [ all = QCD ] (7 / 120) 
+INFO: Reusing existing color information for process: d d~ > e- e+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: d d~ > mu- mu+ a [ all = QCD ] (8 / 120) 
+INFO: Generating Helas calls for FKS process: d d~ > ta- ta+ a [ all = QCD ] (9 / 120) 
+INFO: Reusing existing color information for process: d d~ > ta- ta+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: s s~ > e- e+ a [ all = QCD ] (10 / 120) 
+INFO: Generating Helas calls for FKS process: s s~ > mu- mu+ a [ all = QCD ] (11 / 120) 
+INFO: Generating Helas calls for FKS process: s s~ > ta- ta+ a [ all = QCD ] (12 / 120) 
+INFO: Generating Helas calls for FKS process: b b~ > e- e+ a [ all = QCD ] (13 / 120) 
+INFO: Generating Helas calls for FKS process: b b~ > mu- mu+ a [ all = QCD ] (14 / 120) 
+INFO: Generating Helas calls for FKS process: b b~ > ta- ta+ a [ all = QCD ] (15 / 120) 
+INFO: Generating Helas calls for FKS process: u~ u > e- e+ a [ all = QCD ] (16 / 120) 
+INFO: Processing color information for process: u~ u > e- e+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: u~ u > mu- mu+ a [ all = QCD ] (17 / 120) 
+INFO: Generating Helas calls for FKS process: u~ u > ta- ta+ a [ all = QCD ] (18 / 120) 
+INFO: Reusing existing color information for process: u~ u > ta- ta+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: c~ c > e- e+ a [ all = QCD ] (19 / 120) 
+INFO: Generating Helas calls for FKS process: c~ c > mu- mu+ a [ all = QCD ] (20 / 120) 
+INFO: Generating Helas calls for FKS process: c~ c > ta- ta+ a [ all = QCD ] (21 / 120) 
+INFO: Generating Helas calls for FKS process: d~ d > e- e+ a [ all = QCD ] (22 / 120) 
+INFO: Reusing existing color information for process: d~ d > e- e+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: d~ d > mu- mu+ a [ all = QCD ] (23 / 120) 
+INFO: Generating Helas calls for FKS process: d~ d > ta- ta+ a [ all = QCD ] (24 / 120) 
+INFO: Reusing existing color information for process: d~ d > ta- ta+ a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: s~ s > e- e+ a [ all = QCD ] (25 / 120) 
+INFO: Generating Helas calls for FKS process: s~ s > mu- mu+ a [ all = QCD ] (26 / 120) 
+INFO: Generating Helas calls for FKS process: s~ s > ta- ta+ a [ all = QCD ] (27 / 120) 
+INFO: Generating Helas calls for FKS process: b~ b > e- e+ a [ all = QCD ] (28 / 120) 
+INFO: Generating Helas calls for FKS process: b~ b > mu- mu+ a [ all = QCD ] (29 / 120) 
+INFO: Generating Helas calls for FKS process: b~ b > ta- ta+ a [ all = QCD ] (30 / 120) 
+INFO: Generating Helas calls for FKS process: g u > e- e+ a u [ all = QCD ] @1 (31 / 120) 
+INFO: Processing color information for process: g u > e- e+ a u [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g u > mu- mu+ a u [ all = QCD ] @1 (32 / 120) 
+INFO: Generating Helas calls for FKS process: g u > ta- ta+ a u [ all = QCD ] @1 (33 / 120) 
+INFO: Reusing existing color information for process: g u > ta- ta+ a u [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g c > e- e+ a c [ all = QCD ] @1 (34 / 120) 
+INFO: Generating Helas calls for FKS process: g c > mu- mu+ a c [ all = QCD ] @1 (35 / 120) 
+INFO: Generating Helas calls for FKS process: g c > ta- ta+ a c [ all = QCD ] @1 (36 / 120) 
+INFO: Generating Helas calls for FKS process: g d > e- e+ a d [ all = QCD ] @1 (37 / 120) 
+INFO: Reusing existing color information for process: g d > e- e+ a d [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g d > mu- mu+ a d [ all = QCD ] @1 (38 / 120) 
+INFO: Generating Helas calls for FKS process: g d > ta- ta+ a d [ all = QCD ] @1 (39 / 120) 
+INFO: Reusing existing color information for process: g d > ta- ta+ a d [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g s > e- e+ a s [ all = QCD ] @1 (40 / 120) 
+INFO: Generating Helas calls for FKS process: g s > mu- mu+ a s [ all = QCD ] @1 (41 / 120) 
+INFO: Generating Helas calls for FKS process: g s > ta- ta+ a s [ all = QCD ] @1 (42 / 120) 
+INFO: Generating Helas calls for FKS process: g b > e- e+ a b [ all = QCD ] @1 (43 / 120) 
+INFO: Generating Helas calls for FKS process: g b > mu- mu+ a b [ all = QCD ] @1 (44 / 120) 
+INFO: Generating Helas calls for FKS process: g b > ta- ta+ a b [ all = QCD ] @1 (45 / 120) 
+INFO: Generating Helas calls for FKS process: g u~ > e- e+ a u~ [ all = QCD ] @1 (46 / 120) 
+INFO: Processing color information for process: g u~ > e- e+ a u~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g u~ > mu- mu+ a u~ [ all = QCD ] @1 (47 / 120) 
+INFO: Generating Helas calls for FKS process: g u~ > ta- ta+ a u~ [ all = QCD ] @1 (48 / 120) 
+INFO: Reusing existing color information for process: g u~ > ta- ta+ a u~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g c~ > e- e+ a c~ [ all = QCD ] @1 (49 / 120) 
+INFO: Generating Helas calls for FKS process: g c~ > mu- mu+ a c~ [ all = QCD ] @1 (50 / 120) 
+INFO: Generating Helas calls for FKS process: g c~ > ta- ta+ a c~ [ all = QCD ] @1 (51 / 120) 
+INFO: Generating Helas calls for FKS process: g d~ > e- e+ a d~ [ all = QCD ] @1 (52 / 120) 
+INFO: Reusing existing color information for process: g d~ > e- e+ a d~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g d~ > mu- mu+ a d~ [ all = QCD ] @1 (53 / 120) 
+INFO: Generating Helas calls for FKS process: g d~ > ta- ta+ a d~ [ all = QCD ] @1 (54 / 120) 
+INFO: Reusing existing color information for process: g d~ > ta- ta+ a d~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: g s~ > e- e+ a s~ [ all = QCD ] @1 (55 / 120) 
+INFO: Generating Helas calls for FKS process: g s~ > mu- mu+ a s~ [ all = QCD ] @1 (56 / 120) 
+INFO: Generating Helas calls for FKS process: g s~ > ta- ta+ a s~ [ all = QCD ] @1 (57 / 120) 
+INFO: Generating Helas calls for FKS process: g b~ > e- e+ a b~ [ all = QCD ] @1 (58 / 120) 
+INFO: Generating Helas calls for FKS process: g b~ > mu- mu+ a b~ [ all = QCD ] @1 (59 / 120) 
+INFO: Generating Helas calls for FKS process: g b~ > ta- ta+ a b~ [ all = QCD ] @1 (60 / 120) 
+INFO: Generating Helas calls for FKS process: u g > e- e+ a u [ all = QCD ] @1 (61 / 120) 
+INFO: Processing color information for process: u g > e- e+ a u [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: u g > mu- mu+ a u [ all = QCD ] @1 (62 / 120) 
+INFO: Generating Helas calls for FKS process: u g > ta- ta+ a u [ all = QCD ] @1 (63 / 120) 
+INFO: Reusing existing color information for process: u g > ta- ta+ a u [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: u u~ > e- e+ a g [ all = QCD ] @1 (64 / 120) 
+INFO: Processing color information for process: u u~ > e- e+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: u u~ > mu- mu+ a g [ all = QCD ] @1 (65 / 120) 
+INFO: Generating Helas calls for FKS process: u u~ > ta- ta+ a g [ all = QCD ] @1 (66 / 120) 
+INFO: Reusing existing color information for process: u u~ > ta- ta+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: c g > e- e+ a c [ all = QCD ] @1 (67 / 120) 
+INFO: Generating Helas calls for FKS process: c g > mu- mu+ a c [ all = QCD ] @1 (68 / 120) 
+INFO: Generating Helas calls for FKS process: c g > ta- ta+ a c [ all = QCD ] @1 (69 / 120) 
+INFO: Generating Helas calls for FKS process: c c~ > e- e+ a g [ all = QCD ] @1 (70 / 120) 
+INFO: Generating Helas calls for FKS process: c c~ > mu- mu+ a g [ all = QCD ] @1 (71 / 120) 
+INFO: Generating Helas calls for FKS process: c c~ > ta- ta+ a g [ all = QCD ] @1 (72 / 120) 
+INFO: Generating Helas calls for FKS process: d g > e- e+ a d [ all = QCD ] @1 (73 / 120) 
+INFO: Reusing existing color information for process: d g > e- e+ a d [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: d g > mu- mu+ a d [ all = QCD ] @1 (74 / 120) 
+INFO: Generating Helas calls for FKS process: d g > ta- ta+ a d [ all = QCD ] @1 (75 / 120) 
+INFO: Reusing existing color information for process: d g > ta- ta+ a d [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: d d~ > e- e+ a g [ all = QCD ] @1 (76 / 120) 
+INFO: Reusing existing color information for process: d d~ > e- e+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: d d~ > mu- mu+ a g [ all = QCD ] @1 (77 / 120) 
+INFO: Generating Helas calls for FKS process: d d~ > ta- ta+ a g [ all = QCD ] @1 (78 / 120) 
+INFO: Reusing existing color information for process: d d~ > ta- ta+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: s g > e- e+ a s [ all = QCD ] @1 (79 / 120) 
+INFO: Generating Helas calls for FKS process: s g > mu- mu+ a s [ all = QCD ] @1 (80 / 120) 
+INFO: Generating Helas calls for FKS process: s g > ta- ta+ a s [ all = QCD ] @1 (81 / 120) 
+INFO: Generating Helas calls for FKS process: s s~ > e- e+ a g [ all = QCD ] @1 (82 / 120) 
+INFO: Generating Helas calls for FKS process: s s~ > mu- mu+ a g [ all = QCD ] @1 (83 / 120) 
+INFO: Generating Helas calls for FKS process: s s~ > ta- ta+ a g [ all = QCD ] @1 (84 / 120) 
+INFO: Generating Helas calls for FKS process: b g > e- e+ a b [ all = QCD ] @1 (85 / 120) 
+INFO: Generating Helas calls for FKS process: b g > mu- mu+ a b [ all = QCD ] @1 (86 / 120) 
+INFO: Generating Helas calls for FKS process: b g > ta- ta+ a b [ all = QCD ] @1 (87 / 120) 
+INFO: Generating Helas calls for FKS process: b b~ > e- e+ a g [ all = QCD ] @1 (88 / 120) 
+INFO: Generating Helas calls for FKS process: b b~ > mu- mu+ a g [ all = QCD ] @1 (89 / 120) 
+INFO: Generating Helas calls for FKS process: b b~ > ta- ta+ a g [ all = QCD ] @1 (90 / 120) 
+INFO: Generating Helas calls for FKS process: u~ g > e- e+ a u~ [ all = QCD ] @1 (91 / 120) 
+INFO: Processing color information for process: u~ g > e- e+ a u~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: u~ g > mu- mu+ a u~ [ all = QCD ] @1 (92 / 120) 
+INFO: Generating Helas calls for FKS process: u~ g > ta- ta+ a u~ [ all = QCD ] @1 (93 / 120) 
+INFO: Reusing existing color information for process: u~ g > ta- ta+ a u~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: u~ u > e- e+ a g [ all = QCD ] @1 (94 / 120) 
+INFO: Processing color information for process: u~ u > e- e+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: u~ u > mu- mu+ a g [ all = QCD ] @1 (95 / 120) 
+INFO: Generating Helas calls for FKS process: u~ u > ta- ta+ a g [ all = QCD ] @1 (96 / 120) 
+INFO: Reusing existing color information for process: u~ u > ta- ta+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: c~ g > e- e+ a c~ [ all = QCD ] @1 (97 / 120) 
+INFO: Generating Helas calls for FKS process: c~ g > mu- mu+ a c~ [ all = QCD ] @1 (98 / 120) 
+INFO: Generating Helas calls for FKS process: c~ g > ta- ta+ a c~ [ all = QCD ] @1 (99 / 120) 
+INFO: Generating Helas calls for FKS process: c~ c > e- e+ a g [ all = QCD ] @1 (100 / 120) 
+INFO: Generating Helas calls for FKS process: c~ c > mu- mu+ a g [ all = QCD ] @1 (101 / 120) 
+INFO: Generating Helas calls for FKS process: c~ c > ta- ta+ a g [ all = QCD ] @1 (102 / 120) 
+INFO: Generating Helas calls for FKS process: d~ g > e- e+ a d~ [ all = QCD ] @1 (103 / 120) 
+INFO: Reusing existing color information for process: d~ g > e- e+ a d~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: d~ g > mu- mu+ a d~ [ all = QCD ] @1 (104 / 120) 
+INFO: Generating Helas calls for FKS process: d~ g > ta- ta+ a d~ [ all = QCD ] @1 (105 / 120) 
+INFO: Reusing existing color information for process: d~ g > ta- ta+ a d~ [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: d~ d > e- e+ a g [ all = QCD ] @1 (106 / 120) 
+INFO: Reusing existing color information for process: d~ d > e- e+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: d~ d > mu- mu+ a g [ all = QCD ] @1 (107 / 120) 
+INFO: Generating Helas calls for FKS process: d~ d > ta- ta+ a g [ all = QCD ] @1 (108 / 120) 
+INFO: Reusing existing color information for process: d~ d > ta- ta+ a g [ all = QCD ] @1 
+INFO: Generating Helas calls for FKS process: s~ g > e- e+ a s~ [ all = QCD ] @1 (109 / 120) 
+INFO: Generating Helas calls for FKS process: s~ g > mu- mu+ a s~ [ all = QCD ] @1 (110 / 120) 
+INFO: Generating Helas calls for FKS process: s~ g > ta- ta+ a s~ [ all = QCD ] @1 (111 / 120) 
+INFO: Generating Helas calls for FKS process: s~ s > e- e+ a g [ all = QCD ] @1 (112 / 120) 
+INFO: Generating Helas calls for FKS process: s~ s > mu- mu+ a g [ all = QCD ] @1 (113 / 120) 
+INFO: Generating Helas calls for FKS process: s~ s > ta- ta+ a g [ all = QCD ] @1 (114 / 120) 
+INFO: Generating Helas calls for FKS process: b~ g > e- e+ a b~ [ all = QCD ] @1 (115 / 120) 
+INFO: Generating Helas calls for FKS process: b~ g > mu- mu+ a b~ [ all = QCD ] @1 (116 / 120) 
+INFO: Generating Helas calls for FKS process: b~ g > ta- ta+ a b~ [ all = QCD ] @1 (117 / 120) 
+INFO: Generating Helas calls for FKS process: b~ b > e- e+ a g [ all = QCD ] @1 (118 / 120) 
+INFO: Generating Helas calls for FKS process: b~ b > mu- mu+ a g [ all = QCD ] @1 (119 / 120) 
+INFO: Generating Helas calls for FKS process: b~ b > ta- ta+ a g [ all = QCD ] @1 (120 / 120) 
+INFO: ... Done 
+INFO: Writing files in P0_uux_emepa (1 / 32) 
+INFO: Creating files in directory V0_uux_emepa 
+ALOHA: aloha creates FFV1 set of routines with options: L3
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u u~ > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P0_uux_tamtapa (2 / 32) 
+INFO: Creating files in directory V0_uux_tamtapa 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u u~ > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P0_ddx_emepa (3 / 32) 
+INFO: Creating files in directory V0_ddx_emepa 
+ALOHA: aloha creates FFV3 set of routines with options: L2
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d d~ > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P0_ddx_tamtapa (4 / 32) 
+INFO: Creating files in directory V0_ddx_tamtapa 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d d~ > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P0_uxu_emepa (5 / 32) 
+INFO: Creating files in directory V0_uxu_emepa 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u~ u > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P0_uxu_tamtapa (6 / 32) 
+INFO: Creating files in directory V0_uxu_tamtapa 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u~ u > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P0_dxd_emepa (7 / 32) 
+INFO: Creating files in directory V0_dxd_emepa 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d~ d > e- e+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P0_dxd_tamtapa (8 / 32) 
+INFO: Creating files in directory V0_dxd_tamtapa 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d~ d > ta- ta+ a QED<=3 [ all = QCD ] 
+INFO: Writing files in P1_gu_emepau (9 / 32) 
+INFO: Creating files in directory V1_gu_emepau 
+ALOHA: aloha creates VVV1 set of routines with options: L2,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u > e- e+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g u > e- e+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_gu_tamtapau (10 / 32) 
+INFO: Creating files in directory V1_gu_tamtapau 
+ALOHA: aloha creates FFS1 set of routines with options: L2
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u > ta- ta+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g u > ta- ta+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_gd_emepad (11 / 32) 
+INFO: Creating files in directory V1_gd_emepad 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d > e- e+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g d > e- e+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_gd_tamtapad (12 / 32) 
+INFO: Creating files in directory V1_gd_tamtapad 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d > ta- ta+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g d > ta- ta+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_gux_emepaux (13 / 32) 
+INFO: Creating files in directory V1_gux_emepaux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u~ > e- e+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g u~ > e- e+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_gux_tamtapaux (14 / 32) 
+INFO: Creating files in directory V1_gux_tamtapaux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u~ > ta- ta+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g u~ > ta- ta+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_gdx_emepadx (15 / 32) 
+INFO: Creating files in directory V1_gdx_emepadx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d~ > e- e+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g d~ > e- e+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_gdx_tamtapadx (16 / 32) 
+INFO: Creating files in directory V1_gdx_tamtapadx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d~ > ta- ta+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: g d~ > ta- ta+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_ug_emepau (17 / 32) 
+INFO: Creating files in directory V1_ug_emepau 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u g > e- e+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u g > e- e+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_ug_tamtapau (18 / 32) 
+INFO: Creating files in directory V1_ug_tamtapau 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u g > ta- ta+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u g > ta- ta+ a u QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_uux_emepag (19 / 32) 
+INFO: Creating files in directory V1_uux_emepag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u u~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_uux_tamtapag (20 / 32) 
+INFO: Creating files in directory V1_uux_tamtapag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u u~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_dg_emepad (21 / 32) 
+INFO: Creating files in directory V1_dg_emepad 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d g > e- e+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d g > e- e+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_dg_tamtapad (22 / 32) 
+INFO: Creating files in directory V1_dg_tamtapad 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d g > ta- ta+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d g > ta- ta+ a d QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_ddx_emepag (23 / 32) 
+INFO: Creating files in directory V1_ddx_emepag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d d~ > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_ddx_tamtapag (24 / 32) 
+INFO: Creating files in directory V1_ddx_tamtapag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d d~ > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_uxg_emepaux (25 / 32) 
+INFO: Creating files in directory V1_uxg_emepaux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ g > e- e+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u~ g > e- e+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_uxg_tamtapaux (26 / 32) 
+INFO: Creating files in directory V1_uxg_tamtapaux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ g > ta- ta+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u~ g > ta- ta+ a u~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_uxu_emepag (27 / 32) 
+INFO: Creating files in directory V1_uxu_emepag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u~ u > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_uxu_tamtapag (28 / 32) 
+INFO: Creating files in directory V1_uxu_tamtapag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: u~ u > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_dxg_emepadx (29 / 32) 
+INFO: Creating files in directory V1_dxg_emepadx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ g > e- e+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d~ g > e- e+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_dxg_tamtapadx (30 / 32) 
+INFO: Creating files in directory V1_dxg_tamtapadx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ g > ta- ta+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d~ g > ta- ta+ a d~ QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_dxd_emepag (31 / 32) 
+INFO: Creating files in directory V1_dxd_emepag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d~ d > e- e+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Writing files in P1_dxd_tamtapag (32 / 32) 
+INFO: Creating files in directory V1_dxd_tamtapag 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+INFO: Generating born Feynman diagrams for Process: d~ d > ta- ta+ a g QCD<=1 QED<=3 [ all = QCD ] @1 
+History written to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/ZATo2LA01j_5f_NLO_FXFX_2016/Cards/proc_card_mg5.dat
+ALOHA: aloha creates FFV1 routines
+ALOHA: aloha creates FFV2 routines
+ALOHA: aloha creates FFV3 routines
+ALOHA: aloha creates VVV1 set of routines with options: L2,P0
+ALOHA: aloha creates FFV4 routines
+ALOHA: aloha creates FFV5 routines
+ALOHA: aloha creates R2_GGZ routines
+ALOHA: aloha creates R2_GGVV routines
+ALOHA: aloha creates VVS1 routines
+ALOHA: aloha creates R2_QQ_1 routines
+ALOHA: aloha creates FFV2_5 routines
+ALOHA: aloha creates FFV2_4 routines
+ALOHA: aloha creates FFV2_3 routines
+save configuration file to /srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/ZATo2LA01j_5f_NLO_FXFX_2016/Cards/amcatnlo_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate web pages 
+Type "launch" to generate events from this process, or see
+/srv/ZATo2LA01j_5f_NLO_FXFX_2016/ZATo2LA01j_5f_NLO_FXFX_2016_gridpack/work/ZATo2LA01j_5f_NLO_FXFX_2016/README
+Run "open index.html" to see more information about this process.
+display multiparticles
+Multiparticle labels:
+all = g gh gh~ d u s c b d~ u~ s~ c~ b~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ t t~ z w+ h w- ta- ta+
+l- = e- mu-
+j = g u c d s b u~ c~ d~ s~ b~
+vl = ve vm vt
+l+ = e+ mu+
+lep = e- mu- e+ mu+ ta- ta+
+p = g u c d s b u~ c~ d~ s~ b~
+vl~ = ve~ vm~ vt~
+quit
+ 
+
+ 
+
+job finished step CODEGEN, exiting now.
